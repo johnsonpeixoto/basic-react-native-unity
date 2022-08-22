@@ -93,7 +93,12 @@ $ react-native run-android
 - Install pods:
 ```
 $ cd ios
-$ cd pod install
+
+# For MACs with Intel Family
+$ pod install
+# For MACs with M1 Family 
+$ sudo arch -x86_64 pod install --allow-root
+
 $ cd ..
 ```
 
